@@ -1,0 +1,80 @@
+ERROR - 2024-05-03 01:45:56 --> mysqli_sql_exception: Invalid default value for 'created_at' in /var/www/charttale/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:308
+Stack trace:
+#0 /var/www/charttale/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(308): mysqli->query()
+#1 /var/www/charttale/vendor/codeigniter4/framework/system/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/charttale/vendor/codeigniter4/framework/system/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/charttale/vendor/codeigniter4/framework/system/Database/Forge.php(570): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/charttale/app/Database/Migrations/2024-05-03-013714_CreateUsersTable.php(46): CodeIgniter\Database\Forge->createTable()
+#5 /var/www/charttale/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(867): App\Database\Migrations\CreateUsersTable->up()
+#6 /var/www/charttale/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(183): CodeIgniter\Database\MigrationRunner->migrate()
+#7 /var/www/charttale/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest()
+#8 /var/www/charttale/vendor/codeigniter4/framework/system/CLI/Commands.php(70): CodeIgniter\Commands\Database\Migrate->run()
+#9 /var/www/charttale/vendor/codeigniter4/framework/system/CLI/Console.php(48): CodeIgniter\CLI\Commands->run()
+#10 /var/www/charttale/vendor/codeigniter4/framework/system/Boot.php(338): CodeIgniter\CLI\Console->run()
+#11 /var/www/charttale/vendor/codeigniter4/framework/system/Boot.php(104): CodeIgniter\Boot::runCommand()
+#12 /var/www/charttale/spark(84): CodeIgniter\Boot::bootSpark()
+#13 {main}
+ERROR - 2024-05-03 01:47:53 --> mysqli_sql_exception: Invalid default value for 'created_at' in /var/www/charttale/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:308
+Stack trace:
+#0 /var/www/charttale/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(308): mysqli->query()
+#1 /var/www/charttale/vendor/codeigniter4/framework/system/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/charttale/vendor/codeigniter4/framework/system/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/charttale/vendor/codeigniter4/framework/system/Database/Forge.php(570): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/charttale/app/Database/Migrations/2024-05-03-013714_CreateUsersTable.php(49): CodeIgniter\Database\Forge->createTable()
+#5 /var/www/charttale/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(867): App\Database\Migrations\CreateUsersTable->up()
+#6 /var/www/charttale/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(183): CodeIgniter\Database\MigrationRunner->migrate()
+#7 /var/www/charttale/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest()
+#8 /var/www/charttale/vendor/codeigniter4/framework/system/CLI/Commands.php(70): CodeIgniter\Commands\Database\Migrate->run()
+#9 /var/www/charttale/vendor/codeigniter4/framework/system/CLI/Console.php(48): CodeIgniter\CLI\Commands->run()
+#10 /var/www/charttale/vendor/codeigniter4/framework/system/Boot.php(338): CodeIgniter\CLI\Console->run()
+#11 /var/www/charttale/vendor/codeigniter4/framework/system/Boot.php(104): CodeIgniter\Boot::runCommand()
+#12 /var/www/charttale/spark(84): CodeIgniter\Boot::bootSpark()
+#13 {main}
+ERROR - 2024-05-03 03:03:20 --> mysqli_sql_exception: Table 'chart_tale.User' doesn't exist in /var/www/charttale/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:308
+Stack trace:
+#0 /var/www/charttale/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(308): mysqli->query()
+#1 /var/www/charttale/vendor/codeigniter4/framework/system/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/charttale/vendor/codeigniter4/framework/system/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/charttale/vendor/codeigniter4/framework/system/Database/Forge.php(772): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/charttale/app/Database/Migrations/2024-05-03-030149_AddStatusFieldToUserTable.php(20): CodeIgniter\Database\Forge->addColumn()
+#5 /var/www/charttale/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(867): App\Database\Migrations\AddStatusFieldToUserTable->up()
+#6 /var/www/charttale/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(183): CodeIgniter\Database\MigrationRunner->migrate()
+#7 /var/www/charttale/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest()
+#8 /var/www/charttale/vendor/codeigniter4/framework/system/CLI/Commands.php(70): CodeIgniter\Commands\Database\Migrate->run()
+#9 /var/www/charttale/vendor/codeigniter4/framework/system/CLI/Console.php(48): CodeIgniter\CLI\Commands->run()
+#10 /var/www/charttale/vendor/codeigniter4/framework/system/Boot.php(338): CodeIgniter\CLI\Console->run()
+#11 /var/www/charttale/vendor/codeigniter4/framework/system/Boot.php(104): CodeIgniter\Boot::runCommand()
+#12 /var/www/charttale/spark(84): CodeIgniter\Boot::bootSpark()
+#13 {main}
+ERROR - 2024-05-03 03:03:59 --> mysqli_sql_exception: Unknown column 'summary' in 'users' in /var/www/charttale/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:308
+Stack trace:
+#0 /var/www/charttale/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(308): mysqli->query()
+#1 /var/www/charttale/vendor/codeigniter4/framework/system/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/charttale/vendor/codeigniter4/framework/system/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/charttale/vendor/codeigniter4/framework/system/Database/Forge.php(772): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/charttale/app/Database/Migrations/2024-05-03-030149_AddStatusFieldToUserTable.php(20): CodeIgniter\Database\Forge->addColumn()
+#5 /var/www/charttale/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(867): App\Database\Migrations\AddStatusFieldToUserTable->up()
+#6 /var/www/charttale/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(183): CodeIgniter\Database\MigrationRunner->migrate()
+#7 /var/www/charttale/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest()
+#8 /var/www/charttale/vendor/codeigniter4/framework/system/CLI/Commands.php(70): CodeIgniter\Commands\Database\Migrate->run()
+#9 /var/www/charttale/vendor/codeigniter4/framework/system/CLI/Console.php(48): CodeIgniter\CLI\Commands->run()
+#10 /var/www/charttale/vendor/codeigniter4/framework/system/Boot.php(338): CodeIgniter\CLI\Console->run()
+#11 /var/www/charttale/vendor/codeigniter4/framework/system/Boot.php(104): CodeIgniter\Boot::runCommand()
+#12 /var/www/charttale/spark(84): CodeIgniter\Boot::bootSpark()
+#13 {main}
+ERROR - 2024-05-03 03:23:45 --> mysqli_sql_exception: Failed to open the referenced table 'users' in /var/www/charttale/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:308
+Stack trace:
+#0 /var/www/charttale/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(308): mysqli->query()
+#1 /var/www/charttale/vendor/codeigniter4/framework/system/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/charttale/vendor/codeigniter4/framework/system/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/charttale/vendor/codeigniter4/framework/system/Database/Forge.php(570): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/charttale/app/Database/Migrations/2024-05-03-030911_CreateUploadedDataTable.php(36): CodeIgniter\Database\Forge->createTable()
+#5 /var/www/charttale/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(867): App\Database\Migrations\CreateUploadedDataTable->up()
+#6 /var/www/charttale/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(183): CodeIgniter\Database\MigrationRunner->migrate()
+#7 /var/www/charttale/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest()
+#8 /var/www/charttale/vendor/codeigniter4/framework/system/CLI/Commands.php(70): CodeIgniter\Commands\Database\Migrate->run()
+#9 /var/www/charttale/vendor/codeigniter4/framework/system/CLI/Console.php(48): CodeIgniter\CLI\Commands->run()
+#10 /var/www/charttale/vendor/codeigniter4/framework/system/Boot.php(338): CodeIgniter\CLI\Console->run()
+#11 /var/www/charttale/vendor/codeigniter4/framework/system/Boot.php(104): CodeIgniter\Boot::runCommand()
+#12 /var/www/charttale/spark(84): CodeIgniter\Boot::bootSpark()
+#13 {main}
